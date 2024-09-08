@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report - My Life in 2034</title>
+    <link rel="stylesheet" href="styles.css">  <!-- 이미 있는 스타일을 적용 -->
+</head>
+<body>
+  <header>
+      <h1>Project Report: My Life in 2034</h1>
+      <a href="./index.html">Go Back to Home Page</a>
+  </header>
+    <main>
+        <!-- 소개 섹션 -->
+        <section class="map">
+            <h2>1. Introduction</h2>
+            <p>"My Life in 2034" is a personal portfolio website focused on presenting my future self. The site covers various topics such as my daily life, hobbies, career, and sideline, with each topic represented by individual pages. It was created using HTML, CSS, and JavaScript, with interactive media elements such as images and videos.</p>
+        </section>
+
+        <!-- 구조와 영감 섹션 -->
+        <section class="map">
+            <h2>2. Structure and Inspiration</h2>
+            <p>The website consists of 5 main pages:
+                <ul>
+                    <li><strong>Homepage</strong>: A summary of my life and future vision.</li>
+                    <li><strong>Daily Life</strong>: Describes my routine, including cooking and exercise.</li>
+                    <li><strong>Career</strong>: A section about my work as a software developer.</li>
+                    <li><strong>Sideline</strong>: Highlights my activities as a YouTuber.</li>
+                    <li><strong>Hobbies</strong>: Covers my interests like reading, driving, and investing.</li>
+                </ul>
+            </p>
+            <p>I was inspired by clean and intuitive portfolio websites, aiming for easy navigation and a quick way to explore each topic.</p>
+        </section>
+
+        <!-- 접근성 섹션 -->
+        <section class="map">
+            <h2>3. Accessibility</h2>
+            <p>To make the website accessible for a variety of users, I incorporated several accessibility features:
+                <ul>
+                    <li>All images include descriptive alt text for screen readers.</li>
+                    <li>Clear navigation bars and menus help users easily find information.</li>
+                    <li>The site uses a responsive layout, ensuring it works well across different devices.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- 사용성 섹션 -->
+        <section class="map">
+            <h2>4. Usability</h2>
+            <p>The website was designed with user experience in mind:
+                <ul>
+                    <li>The content is clearly divided by topic, making it easy for users to navigate.</li>
+                    <li>Images and video sliders enhance the visual experience and user engagement.</li>
+                    <li>A simple and intuitive UI improves usability and reduces confusion.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- 학습한 점 섹션 -->
+        <section class="map">
+            <h2>5. Lessons Learned</h2>
+            <p>Through the development of this website, I gained valuable experience in:
+                <ul>
+                    <li>Integrating various media elements like video and image sliders effectively.</li>
+                    <li>Implementing responsive design across multiple devices.</li>
+                    <li>Designing with accessibility in mind to create a more inclusive user experience.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- 평가 I 섹션 -->
+        <section class="map">
+            <h2>6. Evaluation I: Successful Implementation</h2>
+            <p>The most successful aspects of the project include:
+                <ul>
+                    <li>Effective integration of image sliders and video elements.</li>
+                    <li>A well-structured navigation system using reusable header and footer components.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- 평가 II 섹션 -->
+        <section class="map">
+            <h2>7. Evaluation II: Areas for Improvement</h2>
+            <p>Some areas that could be improved:
+                <ul>
+                    <li>Consistency in design across all pages could be enhanced.</li>
+                    <li>The slider animations could be made smoother and more interactive.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- 리소스 섹션 -->
+        <section class="map">
+            <h2>8. Resources</h2>
+            <p>The project utilized several external resources:
+                <ul>
+                    <li>Fonts from Google Fonts (Lilita One, Montserrat).</li>
+                    <li>JavaScript for image sliders and video elements.</li>
+                </ul>
+            </p>
+        </section>
+    </main>
+
+  <div id="footer"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+     
+    
+        fetch('./footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    });
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('./assets/tokyo3.jpg');
+    background-position-y: -200px;
+    background-color: #F6F6F5;
+}
+
+h1 {
+    font-family: 'Lilita One';
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #093E72;
+    font-size: 48px; 
+}
+
+h2 {
+    font-family: 'Lilita One';
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #093E72;
+    font-size: 35px; 
+    text-align: center;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    backdrop-filter: blur(3px);
+    background-color: #f8f9fa50;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center;  
+    column-gap: 20px;  
+}
+
+#banner-text {
+    font-family: 'Lilita One';  
+
+    font-size: 40px;  
+    color: #ffffff;  
+    text-align: center;  
+    line-height: 1.4;  
+    letter-spacing: 2px;  
+    padding: 20px;  
+    border-radius: 10px;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  
+
+}
+
+#banner-text-sub {
+    font-family: 'Lilita One';  
+    font-size: 30px;  
+    color: #004164;  
+    text-align: center;  
+    line-height: 1.4;  
+    letter-spacing: 2px;  
+    padding: 15px;  
+    border-radius: 10px;  
+    background-color: rgba(255, 255, 255, 0.8);  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 20px;
+    background-color: rgba(0, 123, 255, 0.8);  
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 1.2;
+    transition: background-color 0.3s ease;
+    font-size: 17px;  
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+
+main {
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: rgba(240, 240, 240, 0.5);  
+    padding: 20px;  
+    border-radius: 8px;  
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 20px;  
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);  
+    border-radius: 10px;  
+    margin: 0 auto;  
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+    white-space: nowrap;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+
+.map {
+    width: 100%;
+    text-align: center;
+}
+
+.map img {
+    text-align: center;
+    width: 50%;
+    min-width: 250px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+
+header,
+main,
+footer,
+/* nav ul li {
+    border: 1px solid #a9c1d9;
+} */
+
+main,
+footer {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Positioning */
+header {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+.events article,
+.news article {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #a9c1d9;
+    margin: 10px 0;
+}
+
+
+
+
+.events,
+.news {
+    padding: 10px;
+    border: 1px solid #a9c1d9;
+    margin: 10px 0;
+}
+
+/* Flexbox Layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.news,
+.information {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+}
+
+
+.events article,
+.news article {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+    .events article,
+    .news article {
+        flex: 1 1 100%;
+    }
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/Inter/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('./assets/Lilita_One/LilitaOne-Regular.ttf');
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+
+.mySlides {
+    width: 60%;  
+    height: auto;  
+    margin: 0 auto;  
+    display: block;  
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#myVideo {
+    display: block;  
+    margin: 0 auto;  
+}
+
+.events img {
+    max-width: 50%;  
+    height: auto;  
+    display: block;  
+    margin: 20px auto;  
+}
